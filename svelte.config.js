@@ -22,6 +22,9 @@ const config = {
 			precompress: false,
 			strict: true,
 		}),
+		prerender: {
+			handleHttpError: "ignore",
+		},
 		paths: {
 			base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
 		},
