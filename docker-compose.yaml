@@ -1,0 +1,8 @@
+services:
+  server:
+    image: nginx
+    container_name: gda-server
+    volumes:
+      - ./build:/usr/share/nginx/html
+    ports:
+      - 8080:80
