@@ -1,35 +1,28 @@
-<h1>Home</h1>
+<script lang="ts">
+    import logo from '$lib/assets/logo.png';
+</script>
 
 <div class="logo">
-    LOGO
+    <img src={logo} alt="Logo Giulia d'Alessandro" />
 </div>
 
-
 <style lang="scss">
-    .logo {
-        color: white;
-        background-color: black;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        z-index: 100;
-        animation-name: fade-out;
-        animation-timing-function: ease-out;
-        animation-delay: 1s;
-        animation-duration: 0.5s;
-        animation-fill-mode: both;
+.logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    img {
+        max-width: 300px;
+        cursor: pointer;
+        animation: fadeIn 1.5s ease-in-out;
     }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-    @keyframes fade-out {
-        0% {
-            pointer-events: all;
-            opacity: 1;
-        }
-        100% {
-            pointer-events: none;
-            opacity: 0;
-        }
-    }
 </style>
