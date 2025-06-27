@@ -44,9 +44,9 @@ $animation-duration: 1.2s;
     display: inline-block;
     font-weight: normal;
     position: relative;
+    text-align: center;
     a {
         all: unset;
-
     }
     &::after {
         content: "";
